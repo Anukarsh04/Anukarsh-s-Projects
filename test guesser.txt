@@ -1,0 +1,18 @@
+public Decisions(){
+JLabel title = new JLabel ("Test Guesser");
+title.setFont (new Font ("Arial", Font.BOLD, 20));
+add (title);
+JButton tf = new JButton ("True/False");
+tf.setActionCommand ("opt1");
+tf.addActionListener (this);
+tf.setForeground (Color.yellow);
+tf.setBackground (Color.red);
+add (tf);
+JButton abcd = new JButton ("A/B/C/D");
+abcd.setActionCommand ("opt2");
+abcd.addActionListener (this);
+abcd.setForeground (Color.blue);
+abcd.setBackground (Color.green);
+add (abcd);
+JLabel output = new JLabel ("Nothing yet.");
+add (output);
